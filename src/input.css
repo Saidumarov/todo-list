@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #171923;
+}
+
+.con {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: #1A202C;
+    margin-top: 90px;
+    border-radius: 4px;
+
+}
+.res-con {
+    display: flex;
+    padding-left: 10px;
+    width: 95%;
+    height: 40px;
+    background-color: #2D3748;
+    margin: 8px auto 0 auto;
+    align-items: center;
+    border-radius: 6px;
+
+}
+
+.bush {
+    height: 40px;
+}
+
+.p1 {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.p2 {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.p {
+    padding-left: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+
+}
+
+.pe {
+    width: 32%;
+}
+
+.pe1 {
+    width: 32%;
+}
+
+
+.pe2 {
+    width: 32%;
+}
+
+
+
+.modal {
+    display: flex;
+    width: 1100px;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+    margin: 0 auto;
+}
+
+.modal h2 {
+    font-size: 32px;
+    color: white;
+    font-family: poppins;
+    padding: 20px 0 0 30px;
+}
+
+
+@font-face {
+    font-family: poppins;
+    src: url(./Poppins/Poppins-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: poppins1;
+    src: url(./Poppins/Poppins-MediumItalic.ttf);
+}
+
+.add {
+    width: 120px;
+    height: 35px;
+    margin: 25px 0 0 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38A169;
+    font-family: poppins1;
+    box-shadow: .4px .4px 2px 2px #38A169;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.add:hover {
+    box-shadow: 1px 1px 3px 3px #38A169;
+
+}
+
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #1A202C;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.search {
+    width: 400px;
+    height: 35px;
+    margin: 25px 0 0 200px;
+    border-radius: 8px;
+    border: none;
+    padding-left: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+::placeholder {
+    color: #38A169;
+}
+
+.modal1 {
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    background-color: #718096;
+    margin-left: 350px;
+    z-index: 5;
+    border-radius: 5px;
+    transition: .8s;
+
+
+}
+
+.modal1 input {
+    width: 90%;
+    margin: 0 auto;
+    height: 35px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.modall {
+    width: 100%;
+    height: 100%;
+    background-color: #2D3748;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: .5;
+}
+
+.sav {
+    width: 120px;
+    height: 35px;
+    margin: 25px 0 0 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #38A169;
+    font-family: poppins1;
+    box-shadow: .4px .4px 2px 2px #38A169;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.span {
+    color: #65ab85;
+}
+
+i {
+    margin-left: -40px;
+    background-color: white;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.img1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+
+}
+
+.dum {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(237, 241, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 100px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:1100px) {
+
+    .modal {
+        display: flex;
+        width: 90%;
+        height: 40px;
+        align-items: center;
+        margin-bottom: 50px;
+        margin: 0 auto;
+    }
+
+    .con {
+        width: 90%;
+        margin: 0 auto;
+        background-color: #1A202C;
+        margin-top: 90px;
+        border-radius: 4px;
+
+    }
+
+}
+
+@media screen and (max-width:1060px) {
+    .search {
+        width: 300px;
+        height: 35px;
+        margin: 25px 0 0 100px;
+        border-radius: 8px;
+        border: none;
+        padding-left: 30px;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+
+
+@media screen and (max-width:850px) {
+    .search {
+        width: 200px;
+        height: 35px;
+        margin: 25px 0 0 50px;
+        border-radius: 8px;
+        border: none;
+        padding-left: 30px;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+
+@media screen and (max-width:840px) {
+    .res-con {
+        display: flex;
+        padding-left: 10px;
+        width: 95%;
+        height: auto;
+        background-color: #2D3748;
+        margin: 8px auto 0 auto;
+        align-items: center;
+        border-radius: 6px;
+        flex-wrap: wrap;
+
+
+    }
+
+    .pe {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    .pe1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        padding-top: 10px;
+        padding-left: 50px;
+    }
+
+    .pe2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-bottom: 8px;
+    }
+
+}
+
+
+@media screen and (max-width:660px) {
+    .dum {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(237, 241, 244);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0 48px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    .dum {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(237, 241, 244);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0 0 48px;
+    }
+
+    nav {
+        width: 100%;
+        height: 120px;
+        background-color: #1A202C;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+        flex-wrap: wrap;
+    }
+
+    .modall {
+        width: 100%;
+        height: 100%;
+        background-color: #2D3748;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: .5;
+
+        ;
+    }
+
+    .search {
+        width: 80%;
+        height: 35px;
+        margin: 10px 0 0 0px;
+        border-radius: 8px;
+        border: none;
+        padding-left: 30px;
+        font-size: 15px;
+        font-family: sans-serif;
+        position: absolute;
+        left: 42px;
+
+    }
+
+    i {
+        margin-left: 150px;
+        background-color: white;
+        position: absolute;
+        margin-top: 20px;
+    }
+
+    .modal h2 {
+        font-size: 32px;
+        color: white;
+        font-family: poppins;
+        padding: 0px 0 0 30px;
+        margin-top: -50px;
+    }
+
+    .add {
+
+        margin: -50px 0 0 20px;
+    }
+
+    .dum {
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: rgb(237, 241, 244);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -50px 0 0 20px;
+    }
+
+    .con {
+        margin-top: 140px;
+    }
+}
+
+
+@media screen and (max-width:545px) {
+    i {
+        margin-left: 100px;
+        background-color: white;
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:485px) {
+    i {
+        margin-left: 70px;
+        background-color: white;
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    i {
+        margin-left: 40px;
+        background-color: white;
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    i {
+        margin-left: 10px;
+        background-color: white;
+        position: absolute;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .modal1 {
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 250px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:830px) {
+    .modal1 {
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 150px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:685px) {
+    .modal1 {
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 90px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:585px) {
+    .modal1 {
+        width: 400px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 40px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .modal1 {
+        width: 340px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 40px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:460px) {
+    .modal1 {
+        width: 340px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 20px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .modal1 {
+        width: 340px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 5px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}
+
+@media screen and (max-width:385px) {
+    .modal1 {
+        width: 340px;
+        height: 400px;
+        position: fixed;
+        background-color: #718096;
+        margin-left: 0px;
+        z-index: 5;
+        border-radius: 5px;
+        transition: .8s;
+
+
+    }
+
+}

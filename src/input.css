@@ -16,6 +16,7 @@ body {
     border-radius: 4px;
 
 }
+
 .res-con {
     display: flex;
     padding-left: 10px;
@@ -129,6 +130,28 @@ nav {
     z-index: 2;
 }
 
+#edit {
+    background-color: #2D3748;
+    color: #65AB85;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 950px;
+
+
+}
+
+#delete {
+    background-color: #2D3748;
+    color: #65AB85;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+
 .search {
     width: 400px;
     height: 35px;
@@ -138,6 +161,7 @@ nav {
     padding-left: 30px;
     font-size: 15px;
     font-family: sans-serif;
+    outline: none;
 }
 
 ::placeholder {
@@ -146,13 +170,15 @@ nav {
 
 .modal1 {
     width: 400px;
-    height: 400px;
+    height: 300px;
     position: fixed;
     background-color: #718096;
     margin-left: 350px;
     z-index: 5;
+    margin-top: 30px;
     border-radius: 5px;
     transition: .8s;
+    padding-top: 20px;
 
 
 }
@@ -166,6 +192,8 @@ nav {
     margin-top: 20px;
     border: none;
     border-radius: 3px;
+    outline: none;
+    padding-left: 5px;
 }
 
 .modall {
@@ -254,6 +282,13 @@ i {
 
     }
 
+
+    #edit {
+        margin-left: 76%;
+
+
+    }
+
 }
 
 @media screen and (max-width:1060px) {
@@ -295,6 +330,20 @@ i {
         border-radius: 6px;
         flex-wrap: wrap;
 
+
+    }
+
+    #edit {
+
+        margin-left: 10%;
+        margin-top: 101px;
+    }
+
+    #delete {
+
+        margin-left: 135px;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
     }
 
@@ -427,6 +476,14 @@ i {
 
     .con {
         margin-top: 140px;
+        height: auto;
+    }
+
+    #delete {
+        margin-top: 10px;
+        display: block;
+        position: relative;
+        margin-left: 25%;
     }
 }
 
@@ -437,6 +494,18 @@ i {
         background-color: white;
         position: absolute;
         margin-top: 20px;
+    }
+
+    .p {
+        margin-left: -46px;
+    }
+
+    .pe2 {
+        padding-left: 2px;
+    }
+
+    .pe1 {
+        padding-left: 2px;
     }
 }
 
@@ -470,13 +539,7 @@ i {
 @media screen and (max-width:1000px) {
     .modal1 {
         width: 400px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 250px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
 
 
     }
@@ -486,13 +549,7 @@ i {
 @media screen and (max-width:830px) {
     .modal1 {
         width: 400px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 150px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
 
 
     }
@@ -502,13 +559,8 @@ i {
 @media screen and (max-width:685px) {
     .modal1 {
         width: 400px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 90px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
+
 
 
     }
@@ -518,13 +570,8 @@ i {
 @media screen and (max-width:585px) {
     .modal1 {
         width: 400px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 40px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
+
 
 
     }
@@ -534,13 +581,8 @@ i {
 @media screen and (max-width:500px) {
     .modal1 {
         width: 340px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 40px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
+
 
 
     }
@@ -550,13 +592,8 @@ i {
 @media screen and (max-width:460px) {
     .modal1 {
         width: 340px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 20px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
+
 
 
     }
@@ -566,13 +603,7 @@ i {
 @media screen and (max-width:400px) {
     .modal1 {
         width: 340px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 5px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
 
 
     }
@@ -582,13 +613,7 @@ i {
 @media screen and (max-width:385px) {
     .modal1 {
         width: 340px;
-        height: 400px;
-        position: fixed;
-        background-color: #718096;
         margin-left: 0px;
-        z-index: 5;
-        border-radius: 5px;
-        transition: .8s;
 
 
     }

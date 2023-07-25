@@ -60,8 +60,12 @@ const Input = () => {
     document.querySelector("modal , h2").style.color = "";
     document.querySelector(".img").style.zIndex = "-1";
     document.querySelector(".img1").style.zIndex = "1";
-    document.getElementById('delete').style.backgroundColor = "";
-    document.getElementById('edit').style.backgroundColor = "";
+    document.querySelectorAll("#delete").forEach((b) => {
+      b.style.backgroundColor = "";
+    });
+    document.querySelectorAll("#edit").forEach((b) => {
+      b.style.backgroundColor = "";
+    });
   };
 
   const handleButtonClick1 = () => {
@@ -78,9 +82,12 @@ const Input = () => {
     document.querySelector(".img1").style.zIndex = "-1";
     document.querySelector(".img").style.zIndex = "1";
     document.querySelector(".dum").style.backgroundColor = "rgb(204, 210, 215)";
-    document.getElementById('delete').style.backgroundColor = "white";
-    document.getElementById('edit').style.backgroundColor = "white";
-
+    document.querySelectorAll("#delete").forEach((b) => {
+      b.style.backgroundColor = "white";
+    });
+    document.querySelectorAll("#edit").forEach((b) => {
+      b.style.backgroundColor = "white";
+    });
   };
 
   const filter = Names.filter(
@@ -194,8 +201,16 @@ const Input = () => {
                   <span className="s">{age}</span>
                 </p>
               </div>
-              <i class="fa-solid fa-trash"  id="delete"  onClick={() => handleDelete({ firstName, lastName, age })}></i>
-              <i class="fa-solid fa-pen-to-square" id="edit"  onClick={() => handleEdit({ firstName, lastName, age })}></i>
+              <i
+                class="fa-solid fa-trash"
+                id="delete"
+                onClick={() => handleDelete({ firstName, lastName, age })}
+              ></i>
+              <i
+                class="fa-solid fa-pen-to-square"
+                id="edit"
+                onClick={() => handleEdit({ firstName, lastName, age })}
+              ></i>
             </div>
           ))}
         </div>
